@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:orientation="vertical"
+    android:background="@drawable/signup"><ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO YOUR PositionX ID CONSOLE"
+        android:layout_gravity="left"
+        android:layout_margin="16dp"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginLeft="8dp"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tex1"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tex3"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/last_sign_in"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/verifiedcred"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            android:text="Credential Not Verified."
+            android:layout_marginLeft="8dp"/>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toolsets for Managing Your Account"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Email"
+        android:id="@+id/verify_email"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-thin"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Phone"
+        android:id="@+id/verify_phone"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-thin"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Information"
+        android:id="@+id/change_profile"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-thin"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/displayname_edit_container"><EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter New Passphrase"
+            android:inputType="textPassword"
+            android:id="@+id/update_name"
+            android:layout_weight="1"/><Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Passphrase"
+            android:fontFamily="sans-serif-thin"
+            android:layout_weight="1"
+            android:id="@+id/button_update_name"/></LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Credentials"
+        android:id="@+id/change_cred"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-thin"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/edit_container"><EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter New Passphrase"
+            android:inputType="textPassword"
+            android:id="@+id/update_pass"
+            android:layout_weight="1"/><Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Update Passphrase"
+              android:fontFamily="sans-serif-thin"
+              android:layout_weight="1"
+            android:id="@+id/button_update_pass"/></LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/dangerzone"><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PositionX ID: Danger Zone"
+        android:fontFamily="sans-serif-thin"
+            android:textColor="@color/white"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20sp"/><Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signout"
+        android:text="Sign Out"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-thin"/><Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_account"
+        android:text="Delete Your PositionX Account"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-thin"/></LinearLayout>
+</LinearLayout>
+</ScrollView></LinearLayout>
